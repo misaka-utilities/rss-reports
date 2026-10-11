@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PR TIMES 株価材料チェック</title>
+
+  <style>
+    body {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      line-height: 1.6;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header,
+    .article {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .summary {
+      color: #555;
+    }
+
+    button {
+      width: 100%;
+      max-width: 420px;
+      padding: 14px 20px;
+      border: 0;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #copyStatus {
+      min-height: 1.5em;
+      font-weight: bold;
+    }
+
+    .article {
+      display: flex;
+      gap: 16px;
+    }
+
+    .number {
+      min-width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    a {
+      color: #1259c3;
+    }
+
+    .date {
+      margin-bottom: 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    textarea {
+      position: fixed;
+      left: -9999px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>PR TIMES 株価材料チェック</h1>
+
+    <p class="summary">
+      取得日時：2026/10/11 19:05<br>
+      対象記事：40件
+    </p>
+
+    <button type="button" id="copyButton">
+      分析用テキストをコピー
+    </button>
+
+    <p id="copyStatus" aria-live="polite"></p>
+  </header>
+
+  <main>
+    
+      <article class="article">
+        <div class="number">1</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000393.000130952.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【あみやき亭中部地区店舗】平日半額フェアを開催！平日限定のお得なチャンス！人気の焼肉メニュー全10商品が半額になる「平日半額フェア」を店舗限定で開催します！ぜひこの機会にご利用ください。
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T15:15:15+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">2</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000083.000104853.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              AI搭載資料自動生成サービス「イルシル」がキャナルベンチャーズ株式会社に採用されました
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-02-04T06:40:01+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">3</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000003.000182667.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              子育て記録キット「Hibi」、小児科医・発達脳科学者 成田奈緒子氏の監修で「おすすめの使い方」を公開。基本のセットとお子さまペアセットの2展開に
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T18:10:02+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">4</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000001.000185093.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              ゴムマリの業務AIエージェント、『給与計算チェック』を提供開始
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T16:15:17+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">5</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000123.000145240.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              UI/UXの診断・設計・プロトタイプを条件別に検討。フィシルコム、画面数と調査人数で入力する見積もりシミュレーションを刷新
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T16:15:17+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">6</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000058.000108209.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              バーチャルの「いま」を記録するWebメディア「ぶいれぽ」を創刊
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T15:15:15+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">7</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000320.000072693.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【海外向け】EC アプリ「UR: Smart Thanks LINE Icon」を株式会社 UnReact がリリース
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T15:15:15+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">8</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000301.000068315.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              OJTや引き継ぎの準備を一件の仕事から 仕事を教える実践室を公開
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T12:15:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">9</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000118.000165098.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              靴修理店の集客に専用の口コミ質問を搭載　受け取りにQRコードを案内するだけで、仕上がりの良さが口コミに｜口コミロボ(TM)
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T12:15:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">10</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000122.000145240.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              メール・電話の連絡件数と企業リスト作成を分けて予算を検討。フィシルコム、営業代行の見積もりシミュレーションを刷新
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T11:45:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">11</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000057.000108209.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              ユーステラグループがルナリアアセットマネジメント合同会社を設立。VRメディア「ぶいれぽ」の運営を軸に、新たな事業領域へ
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T11:40:37+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">12</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000001344.000018232.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              「私立恵比寿中学」とコラボ！アメリカン・シーフード・レストラン「ババ・ガンプ・シュリンプ」ららぽーと豊洲店 えびちゅうメンバー8人のオリジナルコースターをプレゼント
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T14:15:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">13</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000001624.000014302.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【杉田劇場】世界に一つだけの手作りオーナメントを作ろう！
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T14:15:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">14</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000004.000190574.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              東北限定！　爆売れ店舗の裏バイブル　vol.2
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T14:15:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">15</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000034.000170838.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              国立競技場にSPEEDSTARが初登場。リレフェスで2歳から最速選手までが駆け抜けた
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T17:15:18+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">16</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000484.000053143.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              2026年度 1級建築士 設計製図試験「課題検証」を実施　プラン例・参考答案例を無料提供、ポイント説明会も開催
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T17:15:18+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">17</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000104.000060863.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              令和8年度 1級建築士 設計製図試験 受験生応援企画「オリジナル参考解答例 無料閲覧サービス」の提供開始！
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T16:40:55+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">18</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000005036.000013546.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              ＝LOVE ぴあアリーナMMにて開催されたフジテレビの新音楽番組「STAR」初の大型ライブイベント「STARフェス」 に出演！！
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T16:15:17+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">19</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000003012.000021078.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              令和8年度 宅建解答速報！試験当日16:10より全問の予想正答番号と合格推定点をYouTubeライブにて発表します！
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T16:15:17+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">20</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000001241.000012419.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【英会話×スポーツ】ネイティブキャンプ、サッカーを題材に「言葉の壁を越えるコミュニケーション」を学ぶ教材を公開
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T16:15:17+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">21</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000042.000141324.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              名古屋市の楽器の買取に特化した店頭・出張買取専門サイトをオープン【株式会社コクメイ】
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T16:15:17+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">22</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000056.000174288.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              KAWAGOE BCスタッフ体制（変更）のお知らせ
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T12:15:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">23</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000025.000185497.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【BSフジ】Xでの前回情報解禁時100万imp記録！今秋大注目BLドラマ『営業ですから』キービジュアル&amp;新情報解禁！
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T12:15:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">24</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000020.000179732.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              夜職SNS運用代行で風俗業界支援アカウント数が業界最多水準を達成｜株式会社キングプロテアが2026年最新版実績を初公開
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T15:15:15+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">25</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000068.000124804.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              ダイエットに潜む落とし穴「隠れ栄養失調」に警鐘　日本最適化栄養食協会が戸板女子短期大学で「若年女性の栄養課題」に関する講義を実施
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T14:15:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">26</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000116.000183816.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              『Understanding Dynamic Capabilities』シドニー・ウィンター （Sidney G. Winter）著 論文読書会開催のお知らせ
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T14:15:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">27</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000001777.000006302.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【10月限定】マルラニハワイ表参道店で「おみくじ付き天然石プレゼント」開催中！何が当たるかはお楽しみ♪ 運試しで出会う、あなただけの天然石
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T14:15:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">28</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000042.000175868.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              震災から15年、三陸から未来へ佐藤ひらり、全日本BMX選手権で歌「みらい」を披露
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T12:15:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">29</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000114.000077693.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              井戸田潤さん、熊崎晴香さんが命名！中日ドラゴンズ応援番組『ドラナビ』公式キャラクターが「にゃび助」に決定
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T14:15:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">30</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000870.000062166.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【大日駅徒歩5分】トランクルーム「スペラボ守口大日町店」が2026年11月1日にオープン！
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T14:15:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">31</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000322.000136460.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【大阪・本町】海鮮居酒屋でクリスマスケーキも作ります！パティシエが手がける国産苺の5号ホール、早割4,000円
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T14:15:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">32</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000007.000152255.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【10/15まで期間限定展示中】小学生が下書きをし、手足で描いた巨大「葛飾北斎アート」！モンテッソーリ教育を取り入れた親子イベント『思いっきりアート de あそぼ！』開催レポート
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T14:15:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">33</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000115.000183816.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              『Inductive Reasoning and Bounded Rationality』W・ブライアン・アーサー （W. Brian Arthur）著 論文読書会開催のお知らせ
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T14:15:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">34</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000007.000144658.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              茨城県日立市諏訪町に、まちと人の&quot;これから&quot;をつくる、福祉×まちづくりの拠点「ココスワ」がオープン。10月31日(土)にまちびらきイベントを開催
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-09T14:40:41+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">35</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000392.000030821.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              鮑や伊勢海老を盛り込んだ中国料理のプレート、4つのレストランの味を集めた洋風おせち、和の技が息づく三段重、自宅でホテルの味が楽しめる「フェスティブシーズンを彩るテイクアウトプレート＆おせちが登場」
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-08T16:40:57+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">36</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000009802.000014827.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              『ブシロード20周年記念 アニバーサリーブック』が2027年1月8日(金)発売！
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T11:45:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">37</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000002385.000002734.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              『NARUTO-ナルト-』大型グローバルプロジェクト始動！ アニメ・漫画・カードゲームの新展開を一挙公開
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T11:45:16+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">38</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000014.000129099.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              人道の港 敦賀ムゼウム　リニューアルオープン6周年記念イベント『しる ふれる つながる ６周年フェス』開催
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T11:40:37+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">39</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000015.000163007.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              離島 秋の小豆島 昭和を彩る世界観～小豆島・二十四の瞳映画村
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T13:15:17+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">40</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000004.000183256.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              リアルワールド（RLWRLD）、「まちまるごと実証実験by TMIP」への参加が決定三菱地所・TMIPとの連携を通じてフィジカルAIの社会実装を加速
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-11T12:45:16+09:00</p>
+        </div>
+      </article>
+  </main>
+
+  <textarea id="analysisText">以下はPR TIMESの新着記事一覧です。
+取得日時: 2026/10/11 19:05
+記事数: 40
+
+日本株投資家の視点で分析してください。
+
+日本の上場企業、その子会社、ブランド、保有IPに関連し、
+売上、利益、集客、受注、価格、事業価値、知名度などに
+影響する可能性がある記事を抽出してください。
+
+各候補について、次を示してください。
+
+1. 関連する上場企業名と証券コード
+2. 記事との関係
+3. 株価材料としての強さ（高・中・低）
+4. 注目する理由
+5. 業績への影響経路
+6. 追加で確認すべき情報
+7. 資本関係や証券コードの不確実性
+
+有望な記事がない場合は、無理に候補を挙げず、
+「今回は強い株価材料なし」と明記してください。
+
+=== 記事一覧 ===
+
+1.
+タイトル: 【あみやき亭中部地区店舗】平日半額フェアを開催！平日限定のお得なチャンス！人気の焼肉メニュー全10商品が半額になる「平日半額フェア」を店舗限定で開催します！ぜひこの機会にご利用ください。
+URL: https://prtimes.jp/main/html/rd/p/000000393.000130952.html
+公開日時: 2026-10-11T15:15:15+09:00
+
+2.
+タイトル: AI搭載資料自動生成サービス「イルシル」がキャナルベンチャーズ株式会社に採用されました
+URL: https://prtimes.jp/main/html/rd/p/000000083.000104853.html
+公開日時: 2026-02-04T06:40:01+09:00
+
+3.
+タイトル: 子育て記録キット「Hibi」、小児科医・発達脳科学者 成田奈緒子氏の監修で「おすすめの使い方」を公開。基本のセットとお子さまペアセットの2展開に
+URL: https://prtimes.jp/main/html/rd/p/000000003.000182667.html
+公開日時: 2026-10-11T18:10:02+09:00
+
+4.
+タイトル: ゴムマリの業務AIエージェント、『給与計算チェック』を提供開始
+URL: https://prtimes.jp/main/html/rd/p/000000001.000185093.html
+公開日時: 2026-10-11T16:15:17+09:00
+
+5.
+タイトル: UI/UXの診断・設計・プロトタイプを条件別に検討。フィシルコム、画面数と調査人数で入力する見積もりシミュレーションを刷新
+URL: https://prtimes.jp/main/html/rd/p/000000123.000145240.html
+公開日時: 2026-10-11T16:15:17+09:00
+
+6.
+タイトル: バーチャルの「いま」を記録するWebメディア「ぶいれぽ」を創刊
+URL: https://prtimes.jp/main/html/rd/p/000000058.000108209.html
+公開日時: 2026-10-11T15:15:15+09:00
+
+7.
+タイトル: 【海外向け】EC アプリ「UR: Smart Thanks LINE Icon」を株式会社 UnReact がリリース
+URL: https://prtimes.jp/main/html/rd/p/000000320.000072693.html
+公開日時: 2026-10-11T15:15:15+09:00
+
+8.
+タイトル: OJTや引き継ぎの準備を一件の仕事から 仕事を教える実践室を公開
+URL: https://prtimes.jp/main/html/rd/p/000000301.000068315.html
+公開日時: 2026-10-11T12:15:16+09:00
+
+9.
+タイトル: 靴修理店の集客に専用の口コミ質問を搭載　受け取りにQRコードを案内するだけで、仕上がりの良さが口コミに｜口コミロボ(TM)
+URL: https://prtimes.jp/main/html/rd/p/000000118.000165098.html
+公開日時: 2026-10-11T12:15:16+09:00
+
+10.
+タイトル: メール・電話の連絡件数と企業リスト作成を分けて予算を検討。フィシルコム、営業代行の見積もりシミュレーションを刷新
+URL: https://prtimes.jp/main/html/rd/p/000000122.000145240.html
+公開日時: 2026-10-11T11:45:16+09:00
+
+11.
+タイトル: ユーステラグループがルナリアアセットマネジメント合同会社を設立。VRメディア「ぶいれぽ」の運営を軸に、新たな事業領域へ
+URL: https://prtimes.jp/main/html/rd/p/000000057.000108209.html
+公開日時: 2026-10-11T11:40:37+09:00
+
+12.
+タイトル: 「私立恵比寿中学」とコラボ！アメリカン・シーフード・レストラン「ババ・ガンプ・シュリンプ」ららぽーと豊洲店 えびちゅうメンバー8人のオリジナルコースターをプレゼント
+URL: https://prtimes.jp/main/html/rd/p/000001344.000018232.html
+公開日時: 2026-10-11T14:15:16+09:00
+
+13.
+タイトル: 【杉田劇場】世界に一つだけの手作りオーナメントを作ろう！
+URL: https://prtimes.jp/main/html/rd/p/000001624.000014302.html
+公開日時: 2026-10-11T14:15:16+09:00
+
+14.
+タイトル: 東北限定！　爆売れ店舗の裏バイブル　vol.2
+URL: https://prtimes.jp/main/html/rd/p/000000004.000190574.html
+公開日時: 2026-10-11T14:15:16+09:00
+
+15.
+タイトル: 国立競技場にSPEEDSTARが初登場。リレフェスで2歳から最速選手までが駆け抜けた
+URL: https://prtimes.jp/main/html/rd/p/000000034.000170838.html
+公開日時: 2026-10-11T17:15:18+09:00
+
+16.
+タイトル: 2026年度 1級建築士 設計製図試験「課題検証」を実施　プラン例・参考答案例を無料提供、ポイント説明会も開催
+URL: https://prtimes.jp/main/html/rd/p/000000484.000053143.html
+公開日時: 2026-10-11T17:15:18+09:00
+
+17.
+タイトル: 令和8年度 1級建築士 設計製図試験 受験生応援企画「オリジナル参考解答例 無料閲覧サービス」の提供開始！
+URL: https://prtimes.jp/main/html/rd/p/000000104.000060863.html
+公開日時: 2026-10-11T16:40:55+09:00
+
+18.
+タイトル: ＝LOVE ぴあアリーナMMにて開催されたフジテレビの新音楽番組「STAR」初の大型ライブイベント「STARフェス」 に出演！！
+URL: https://prtimes.jp/main/html/rd/p/000005036.000013546.html
+公開日時: 2026-10-11T16:15:17+09:00
+
+19.
+タイトル: 令和8年度 宅建解答速報！試験当日16:10より全問の予想正答番号と合格推定点をYouTubeライブにて発表します！
+URL: https://prtimes.jp/main/html/rd/p/000003012.000021078.html
+公開日時: 2026-10-11T16:15:17+09:00
+
+20.
+タイトル: 【英会話×スポーツ】ネイティブキャンプ、サッカーを題材に「言葉の壁を越えるコミュニケーション」を学ぶ教材を公開
+URL: https://prtimes.jp/main/html/rd/p/000001241.000012419.html
+公開日時: 2026-10-11T16:15:17+09:00
+
+21.
+タイトル: 名古屋市の楽器の買取に特化した店頭・出張買取専門サイトをオープン【株式会社コクメイ】
+URL: https://prtimes.jp/main/html/rd/p/000000042.000141324.html
+公開日時: 2026-10-11T16:15:17+09:00
+
+22.
+タイトル: KAWAGOE BCスタッフ体制（変更）のお知らせ
+URL: https://prtimes.jp/main/html/rd/p/000000056.000174288.html
+公開日時: 2026-10-11T12:15:16+09:00
+
+23.
+タイトル: 【BSフジ】Xでの前回情報解禁時100万imp記録！今秋大注目BLドラマ『営業ですから』キービジュアル&amp;新情報解禁！
+URL: https://prtimes.jp/main/html/rd/p/000000025.000185497.html
+公開日時: 2026-10-11T12:15:16+09:00
+
+24.
+タイトル: 夜職SNS運用代行で風俗業界支援アカウント数が業界最多水準を達成｜株式会社キングプロテアが2026年最新版実績を初公開
+URL: https://prtimes.jp/main/html/rd/p/000000020.000179732.html
+公開日時: 2026-10-11T15:15:15+09:00
+
+25.
+タイトル: ダイエットに潜む落とし穴「隠れ栄養失調」に警鐘　日本最適化栄養食協会が戸板女子短期大学で「若年女性の栄養課題」に関する講義を実施
+URL: https://prtimes.jp/main/html/rd/p/000000068.000124804.html
+公開日時: 2026-10-11T14:15:16+09:00
+
+26.
+タイトル: 『Understanding Dynamic Capabilities』シドニー・ウィンター （Sidney G. Winter）著 論文読書会開催のお知らせ
+URL: https://prtimes.jp/main/html/rd/p/000000116.000183816.html
+公開日時: 2026-10-11T14:15:16+09:00
+
+27.
+タイトル: 【10月限定】マルラニハワイ表参道店で「おみくじ付き天然石プレゼント」開催中！何が当たるかはお楽しみ♪ 運試しで出会う、あなただけの天然石
+URL: https://prtimes.jp/main/html/rd/p/000001777.000006302.html
+公開日時: 2026-10-11T14:15:16+09:00
+
+28.
+タイトル: 震災から15年、三陸から未来へ佐藤ひらり、全日本BMX選手権で歌「みらい」を披露
+URL: https://prtimes.jp/main/html/rd/p/000000042.000175868.html
+公開日時: 2026-10-11T12:15:16+09:00
+
+29.
+タイトル: 井戸田潤さん、熊崎晴香さんが命名！中日ドラゴンズ応援番組『ドラナビ』公式キャラクターが「にゃび助」に決定
+URL: https://prtimes.jp/main/html/rd/p/000000114.000077693.html
+公開日時: 2026-10-11T14:15:16+09:00
+
+30.
+タイトル: 【大日駅徒歩5分】トランクルーム「スペラボ守口大日町店」が2026年11月1日にオープン！
+URL: https://prtimes.jp/main/html/rd/p/000000870.000062166.html
+公開日時: 2026-10-11T14:15:16+09:00
+
+31.
+タイトル: 【大阪・本町】海鮮居酒屋でクリスマスケーキも作ります！パティシエが手がける国産苺の5号ホール、早割4,000円
+URL: https://prtimes.jp/main/html/rd/p/000000322.000136460.html
+公開日時: 2026-10-11T14:15:16+09:00
+
+32.
+タイトル: 【10/15まで期間限定展示中】小学生が下書きをし、手足で描いた巨大「葛飾北斎アート」！モンテッソーリ教育を取り入れた親子イベント『思いっきりアート de あそぼ！』開催レポート
+URL: https://prtimes.jp/main/html/rd/p/000000007.000152255.html
+公開日時: 2026-10-11T14:15:16+09:00
+
+33.
+タイトル: 『Inductive Reasoning and Bounded Rationality』W・ブライアン・アーサー （W. Brian Arthur）著 論文読書会開催のお知らせ
+URL: https://prtimes.jp/main/html/rd/p/000000115.000183816.html
+公開日時: 2026-10-11T14:15:16+09:00
+
+34.
+タイトル: 茨城県日立市諏訪町に、まちと人の&quot;これから&quot;をつくる、福祉×まちづくりの拠点「ココスワ」がオープン。10月31日(土)にまちびらきイベントを開催
+URL: https://prtimes.jp/main/html/rd/p/000000007.000144658.html
+公開日時: 2026-10-09T14:40:41+09:00
+
+35.
+タイトル: 鮑や伊勢海老を盛り込んだ中国料理のプレート、4つのレストランの味を集めた洋風おせち、和の技が息づく三段重、自宅でホテルの味が楽しめる「フェスティブシーズンを彩るテイクアウトプレート＆おせちが登場」
+URL: https://prtimes.jp/main/html/rd/p/000000392.000030821.html
+公開日時: 2026-10-08T16:40:57+09:00
+
+36.
+タイトル: 『ブシロード20周年記念 アニバーサリーブック』が2027年1月8日(金)発売！
+URL: https://prtimes.jp/main/html/rd/p/000009802.000014827.html
+公開日時: 2026-10-11T11:45:16+09:00
+
+37.
+タイトル: 『NARUTO-ナルト-』大型グローバルプロジェクト始動！ アニメ・漫画・カードゲームの新展開を一挙公開
+URL: https://prtimes.jp/main/html/rd/p/000002385.000002734.html
+公開日時: 2026-10-11T11:45:16+09:00
+
+38.
+タイトル: 人道の港 敦賀ムゼウム　リニューアルオープン6周年記念イベント『しる ふれる つながる ６周年フェス』開催
+URL: https://prtimes.jp/main/html/rd/p/000000014.000129099.html
+公開日時: 2026-10-11T11:40:37+09:00
+
+39.
+タイトル: 離島 秋の小豆島 昭和を彩る世界観～小豆島・二十四の瞳映画村
+URL: https://prtimes.jp/main/html/rd/p/000000015.000163007.html
+公開日時: 2026-10-11T13:15:17+09:00
+
+40.
+タイトル: リアルワールド（RLWRLD）、「まちまるごと実証実験by TMIP」への参加が決定三菱地所・TMIPとの連携を通じてフィジカルAIの社会実装を加速
+URL: https://prtimes.jp/main/html/rd/p/000000004.000183256.html
+公開日時: 2026-10-11T12:45:16+09:00</textarea>
+
+  <script>
+    const copyButton = document.getElementById("copyButton");
+    const copyStatus = document.getElementById("copyStatus");
+    const analysisText = document.getElementById("analysisText");
+
+    copyButton.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(analysisText.value);
+        copyStatus.textContent = "コピーしました。ChatGPTへ貼り付けてください。";
+      } catch (error) {
+        analysisText.focus();
+        analysisText.select();
+        document.execCommand("copy");
+        copyStatus.textContent = "コピーしました。ChatGPTへ貼り付けてください。";
+      }
+    });
+  </script>
+</body>
+</html>
