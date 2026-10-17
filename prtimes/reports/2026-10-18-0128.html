@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PR TIMES 株価材料チェック</title>
+
+  <style>
+    body {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      line-height: 1.6;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header,
+    .article {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .summary {
+      color: #555;
+    }
+
+    button {
+      width: 100%;
+      max-width: 420px;
+      padding: 14px 20px;
+      border: 0;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #copyStatus {
+      min-height: 1.5em;
+      font-weight: bold;
+    }
+
+    .article {
+      display: flex;
+      gap: 16px;
+    }
+
+    .number {
+      min-width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    a {
+      color: #1259c3;
+    }
+
+    .date {
+      margin-bottom: 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    textarea {
+      position: fixed;
+      left: -9999px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>PR TIMES 株価材料チェック</h1>
+
+    <p class="summary">
+      取得日時：2026/10/18 01:28<br>
+      対象記事：2件
+    </p>
+
+    <button type="button" id="copyButton">
+      分析用テキストをコピー
+    </button>
+
+    <p id="copyStatus" aria-live="polite"></p>
+  </header>
+
+  <main>
+    
+      <article class="article">
+        <div class="number">1</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000010.000036510.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              非エンジニアの元テレビ報道ディレクターが初めて開発したAI、Google主催の国際AIハッカソンでParallel部門1位に
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-17T13:15:18+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">2</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000047.000159668.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              獲得した名刺を営業資産へ　AI営業支援CRM「ProSales」が名刺スキャン機能を提供開始
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-10-17T22:10:02+09:00</p>
+        </div>
+      </article>
+  </main>
+
+  <textarea id="analysisText">以下はPR TIMESの新着記事一覧です。
+取得日時: 2026/10/18 01:28
+記事数: 2
+
+日本株投資家の視点で分析してください。
+
+日本の上場企業、その子会社、ブランド、保有IPに関連し、
+売上、利益、集客、受注、価格、事業価値、知名度などに
+影響する可能性がある記事を抽出してください。
+
+各候補について、次を示してください。
+
+1. 関連する上場企業名と証券コード
+2. 記事との関係
+3. 株価材料としての強さ（高・中・低）
+4. 注目する理由
+5. 業績への影響経路
+6. 追加で確認すべき情報
+7. 資本関係や証券コードの不確実性
+
+有望な記事がない場合は、無理に候補を挙げず、
+「今回は強い株価材料なし」と明記してください。
+
+=== 記事一覧 ===
+
+1.
+タイトル: 非エンジニアの元テレビ報道ディレクターが初めて開発したAI、Google主催の国際AIハッカソンでParallel部門1位に
+URL: https://prtimes.jp/main/html/rd/p/000000010.000036510.html
+公開日時: 2026-10-17T13:15:18+09:00
+
+2.
+タイトル: 獲得した名刺を営業資産へ　AI営業支援CRM「ProSales」が名刺スキャン機能を提供開始
+URL: https://prtimes.jp/main/html/rd/p/000000047.000159668.html
+公開日時: 2026-10-17T22:10:02+09:00</textarea>
+
+  <script>
+    const copyButton = document.getElementById("copyButton");
+    const copyStatus = document.getElementById("copyStatus");
+    const analysisText = document.getElementById("analysisText");
+
+    copyButton.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(analysisText.value);
+        copyStatus.textContent = "コピーしました。ChatGPTへ貼り付けてください。";
+      } catch (error) {
+        analysisText.focus();
+        analysisText.select();
+        document.execCommand("copy");
+        copyStatus.textContent = "コピーしました。ChatGPTへ貼り付けてください。";
+      }
+    });
+  </script>
+</body>
+</html>
