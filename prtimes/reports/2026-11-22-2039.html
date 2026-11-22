@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PR TIMES 株価材料チェック</title>
+
+  <style>
+    body {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      line-height: 1.6;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header,
+    .article {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .summary {
+      color: #555;
+    }
+
+    button {
+      width: 100%;
+      max-width: 420px;
+      padding: 14px 20px;
+      border: 0;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #copyStatus {
+      min-height: 1.5em;
+      font-weight: bold;
+    }
+
+    .article {
+      display: flex;
+      gap: 16px;
+    }
+
+    .number {
+      min-width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    a {
+      color: #1259c3;
+    }
+
+    .date {
+      margin-bottom: 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    textarea {
+      position: fixed;
+      left: -9999px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>PR TIMES 株価材料チェック</h1>
+
+    <p class="summary">
+      取得日時：2026/11/22 20:39<br>
+      対象記事：22件
+    </p>
+
+    <button type="button" id="copyButton">
+      分析用テキストをコピー
+    </button>
+
+    <p id="copyStatus" aria-live="polite"></p>
+  </header>
+
+  <main>
+    
+      <article class="article">
+        <div class="number">1</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000147.000138449.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              OrcaRouter、インターネット技術者が一堂に会する技術イベント「Internet Week 2026」に協賛・出展
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-22T17:41:54+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">2</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000145.000138449.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              FlashLabs、FlashRevのAIエージェント「Hermes Agent」を大幅アップデート ― 複数セッション・スケジュールタスクなどに対応
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-22T17:15:33+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">3</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000001.000195210.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              富士市の高齢者向け「健康づくりデイトレーニング」、パーソナルジムepが週5クラスに拡充
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-22T16:45:29+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">4</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000115.000132927.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              作家・小原晩による個展「小原晩のゆーたいりだつ」。12月12日（土）よりお匙 京都で開催。
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-19T14:15:19+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">5</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000144.000138449.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              OrcaRouterのサイバーセキュリティチーム、OrcaCyber、Tencent「Hy4 Flash」のアブリテーション版GGUFウェイトを公開
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-22T15:41:45+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">6</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000143.000138449.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              OrcaRouter、Alibabaの最新フラッグシップモデル「Qwen4 Max」のAPI提供を開始
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-22T15:15:24+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">7</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000003.000175892.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              「1枚の写真から手のひらの街へ」写真からペーパークラフトを作るジオクラが12月にサービス公開
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-22T14:41:55+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">8</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000037.000185093.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              ゴムマリ、『類似図面検索』のフィージビリティPoCを提供開始
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-22T12:41:56+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">9</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000006.000172954.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              ミラノの伝統菓子を、新潟の卵と薪窯で再構築。ヨーロッパで約10年経験を積んだパン職人・西方健が手がける「パネットーネ・クラシコ」
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-22T16:15:39+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">10</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000011.000154247.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【ブレイン地震予報】関東東部でＭ７級大地震を予報中　茨城県又は千葉県を中心に首都直下地震の可能性
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-17T10:15:26+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">11</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000010.000154056.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              松尾研発スタートアップ BAKUTAN、データとアルゴリズムを活かした人的資本経営の実現を支援する特化型AIソリューション「Intelligent HR」の本格提供を開始
+            </a>
+          </h2>
+          <p class="date">公開日時：2025-08-08T00:10:02+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">12</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000001772.000007821.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              『本人認証完了でふるなびマネーが2,000円分もらえる！2026年冬のデビューキャンペーン』を開始！
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-22T18:41:47+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">13</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000224.000094653.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              タクティカートプレゼンツ「冬のクラシックフェスタ2026」
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-22T14:45:37+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">14</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000506.000066095.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              アベイル、11/22（日）開催 『SAPPORO COLLECTION 2026 AUTUMN/WINTER』 に出演！ 紹介商品は、店舗・オンラインストアで販売
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-21T13:15:22+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">15</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000016.000185093.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              ゴムマリの業務AIエージェント、『見積査定』を提供開始
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-22T12:15:32+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">16</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000005.000186553.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【フィリップス・タブレット】楽天ブラックフライデーに参加、PHILIPSのAndroidタブレット全4モデルが11月19日～25日の期間中、最大14%OFF
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-22T12:15:32+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">17</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000250.000137731.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【資料を無料公開】「ChatGPT Work 仕事の任せ方キット」を公開。Uravationが、表計算・資料・報告・共有ページ・定期実行の依頼テンプレート30本を、止める所まで書いてまとめました
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-22T12:15:32+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">18</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000001.000195240.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              楽天市場・Yahoo!ショッピングの販売価格を毎日自動で調査し、価格変更まで自動化する「価格更新ロボ まもるくん」の提供を開始　登録から1か月無料
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-22T17:41:54+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">19</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000149.000057629.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              「人事・総務部＋3」の実践知を全国へ。11月22日「いい人事の日」にTHE CAREが3つの特別企画
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-22T17:41:54+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">20</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000018.000030482.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              大阪から中東・ヨルダンの魅力を発信！死海コスメ「TRINITAE（トリネティ）」が、ヨルダンの自然と文化を描いたオリジナルトートバッグ付きセットを数量限定発売
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-22T17:41:54+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">21</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000262.000098799.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              「ハロー、背中のひらめき。」日本初※革新的で多機能な背面ディスプレイに加え、ライカ共同開発のデュアル2億画素カメラを搭載した「Xiaomi 18 Pro Series」を発表
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-22T17:41:54+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">22</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000008.000163738.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              「Asia Pacific’s 100 Best Coffee Shops 2026」にMel Coffee Roastersが選ばれました! 」
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-22T17:41:54+09:00</p>
+        </div>
+      </article>
+  </main>
+
+  <textarea id="analysisText">以下はPR TIMESの新着記事一覧です。
+取得日時: 2026/11/22 20:39
+記事数: 22
+
+日本株投資家の視点で分析してください。
+
+日本の上場企業、その子会社、ブランド、保有IPに関連し、
+売上、利益、集客、受注、価格、事業価値、知名度などに
+影響する可能性がある記事を抽出してください。
+
+各候補について、次を示してください。
+
+1. 関連する上場企業名と証券コード
+2. 記事との関係
+3. 株価材料としての強さ（高・中・低）
+4. 注目する理由
+5. 業績への影響経路
+6. 追加で確認すべき情報
+7. 資本関係や証券コードの不確実性
+
+有望な記事がない場合は、無理に候補を挙げず、
+「今回は強い株価材料なし」と明記してください。
+
+=== 記事一覧 ===
+
+1.
+タイトル: OrcaRouter、インターネット技術者が一堂に会する技術イベント「Internet Week 2026」に協賛・出展
+URL: https://prtimes.jp/main/html/rd/p/000000147.000138449.html
+公開日時: 2026-11-22T17:41:54+09:00
+
+2.
+タイトル: FlashLabs、FlashRevのAIエージェント「Hermes Agent」を大幅アップデート ― 複数セッション・スケジュールタスクなどに対応
+URL: https://prtimes.jp/main/html/rd/p/000000145.000138449.html
+公開日時: 2026-11-22T17:15:33+09:00
+
+3.
+タイトル: 富士市の高齢者向け「健康づくりデイトレーニング」、パーソナルジムepが週5クラスに拡充
+URL: https://prtimes.jp/main/html/rd/p/000000001.000195210.html
+公開日時: 2026-11-22T16:45:29+09:00
+
+4.
+タイトル: 作家・小原晩による個展「小原晩のゆーたいりだつ」。12月12日（土）よりお匙 京都で開催。
+URL: https://prtimes.jp/main/html/rd/p/000000115.000132927.html
+公開日時: 2026-11-19T14:15:19+09:00
+
+5.
+タイトル: OrcaRouterのサイバーセキュリティチーム、OrcaCyber、Tencent「Hy4 Flash」のアブリテーション版GGUFウェイトを公開
+URL: https://prtimes.jp/main/html/rd/p/000000144.000138449.html
+公開日時: 2026-11-22T15:41:45+09:00
+
+6.
+タイトル: OrcaRouter、Alibabaの最新フラッグシップモデル「Qwen4 Max」のAPI提供を開始
+URL: https://prtimes.jp/main/html/rd/p/000000143.000138449.html
+公開日時: 2026-11-22T15:15:24+09:00
+
+7.
+タイトル: 「1枚の写真から手のひらの街へ」写真からペーパークラフトを作るジオクラが12月にサービス公開
+URL: https://prtimes.jp/main/html/rd/p/000000003.000175892.html
+公開日時: 2026-11-22T14:41:55+09:00
+
+8.
+タイトル: ゴムマリ、『類似図面検索』のフィージビリティPoCを提供開始
+URL: https://prtimes.jp/main/html/rd/p/000000037.000185093.html
+公開日時: 2026-11-22T12:41:56+09:00
+
+9.
+タイトル: ミラノの伝統菓子を、新潟の卵と薪窯で再構築。ヨーロッパで約10年経験を積んだパン職人・西方健が手がける「パネットーネ・クラシコ」
+URL: https://prtimes.jp/main/html/rd/p/000000006.000172954.html
+公開日時: 2026-11-22T16:15:39+09:00
+
+10.
+タイトル: 【ブレイン地震予報】関東東部でＭ７級大地震を予報中　茨城県又は千葉県を中心に首都直下地震の可能性
+URL: https://prtimes.jp/main/html/rd/p/000000011.000154247.html
+公開日時: 2026-11-17T10:15:26+09:00
+
+11.
+タイトル: 松尾研発スタートアップ BAKUTAN、データとアルゴリズムを活かした人的資本経営の実現を支援する特化型AIソリューション「Intelligent HR」の本格提供を開始
+URL: https://prtimes.jp/main/html/rd/p/000000010.000154056.html
+公開日時: 2025-08-08T00:10:02+09:00
+
+12.
+タイトル: 『本人認証完了でふるなびマネーが2,000円分もらえる！2026年冬のデビューキャンペーン』を開始！
+URL: https://prtimes.jp/main/html/rd/p/000001772.000007821.html
+公開日時: 2026-11-22T18:41:47+09:00
+
+13.
+タイトル: タクティカートプレゼンツ「冬のクラシックフェスタ2026」
+URL: https://prtimes.jp/main/html/rd/p/000000224.000094653.html
+公開日時: 2026-11-22T14:45:37+09:00
+
+14.
+タイトル: アベイル、11/22（日）開催 『SAPPORO COLLECTION 2026 AUTUMN/WINTER』 に出演！ 紹介商品は、店舗・オンラインストアで販売
+URL: https://prtimes.jp/main/html/rd/p/000000506.000066095.html
+公開日時: 2026-11-21T13:15:22+09:00
+
+15.
+タイトル: ゴムマリの業務AIエージェント、『見積査定』を提供開始
+URL: https://prtimes.jp/main/html/rd/p/000000016.000185093.html
+公開日時: 2026-11-22T12:15:32+09:00
+
+16.
+タイトル: 【フィリップス・タブレット】楽天ブラックフライデーに参加、PHILIPSのAndroidタブレット全4モデルが11月19日～25日の期間中、最大14%OFF
+URL: https://prtimes.jp/main/html/rd/p/000000005.000186553.html
+公開日時: 2026-11-22T12:15:32+09:00
+
+17.
+タイトル: 【資料を無料公開】「ChatGPT Work 仕事の任せ方キット」を公開。Uravationが、表計算・資料・報告・共有ページ・定期実行の依頼テンプレート30本を、止める所まで書いてまとめました
+URL: https://prtimes.jp/main/html/rd/p/000000250.000137731.html
+公開日時: 2026-11-22T12:15:32+09:00
+
+18.
+タイトル: 楽天市場・Yahoo!ショッピングの販売価格を毎日自動で調査し、価格変更まで自動化する「価格更新ロボ まもるくん」の提供を開始　登録から1か月無料
+URL: https://prtimes.jp/main/html/rd/p/000000001.000195240.html
+公開日時: 2026-11-22T17:41:54+09:00
+
+19.
+タイトル: 「人事・総務部＋3」の実践知を全国へ。11月22日「いい人事の日」にTHE CAREが3つの特別企画
+URL: https://prtimes.jp/main/html/rd/p/000000149.000057629.html
+公開日時: 2026-11-22T17:41:54+09:00
+
+20.
+タイトル: 大阪から中東・ヨルダンの魅力を発信！死海コスメ「TRINITAE（トリネティ）」が、ヨルダンの自然と文化を描いたオリジナルトートバッグ付きセットを数量限定発売
+URL: https://prtimes.jp/main/html/rd/p/000000018.000030482.html
+公開日時: 2026-11-22T17:41:54+09:00
+
+21.
+タイトル: 「ハロー、背中のひらめき。」日本初※革新的で多機能な背面ディスプレイに加え、ライカ共同開発のデュアル2億画素カメラを搭載した「Xiaomi 18 Pro Series」を発表
+URL: https://prtimes.jp/main/html/rd/p/000000262.000098799.html
+公開日時: 2026-11-22T17:41:54+09:00
+
+22.
+タイトル: 「Asia Pacific’s 100 Best Coffee Shops 2026」にMel Coffee Roastersが選ばれました! 」
+URL: https://prtimes.jp/main/html/rd/p/000000008.000163738.html
+公開日時: 2026-11-22T17:41:54+09:00</textarea>
+
+  <script>
+    const copyButton = document.getElementById("copyButton");
+    const copyStatus = document.getElementById("copyStatus");
+    const analysisText = document.getElementById("analysisText");
+
+    copyButton.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(analysisText.value);
+        copyStatus.textContent = "コピーしました。ChatGPTへ貼り付けてください。";
+      } catch (error) {
+        analysisText.focus();
+        analysisText.select();
+        document.execCommand("copy");
+        copyStatus.textContent = "コピーしました。ChatGPTへ貼り付けてください。";
+      }
+    });
+  </script>
+</body>
+</html>
