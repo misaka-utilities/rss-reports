@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PR TIMES 株価材料チェック</title>
+
+  <style>
+    body {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      line-height: 1.6;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header,
+    .article {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .summary {
+      color: #555;
+    }
+
+    button {
+      width: 100%;
+      max-width: 420px;
+      padding: 14px 20px;
+      border: 0;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #copyStatus {
+      min-height: 1.5em;
+      font-weight: bold;
+    }
+
+    .article {
+      display: flex;
+      gap: 16px;
+    }
+
+    .number {
+      min-width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    a {
+      color: #1259c3;
+    }
+
+    .date {
+      margin-bottom: 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    textarea {
+      position: fixed;
+      left: -9999px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>PR TIMES 株価材料チェック</h1>
+
+    <p class="summary">
+      取得日時：2026/11/29 02:36<br>
+      対象記事：34件
+    </p>
+
+    <button type="button" id="copyButton">
+      分析用テキストをコピー
+    </button>
+
+    <p id="copyStatus" aria-live="polite"></p>
+  </header>
+
+  <main>
+    
+      <article class="article">
+        <div class="number">1</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000038.000112568.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【獣医師発ねこヘルスケアブランド uniam】みりちゃむさんとユニアム代表 獣医師・杉本亜衣が、ねこへの偏愛と毎日の健康を語る。「猫狂研究所」ローンチイベントを開催
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:40:02+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">2</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000064.000033002.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              高知県大月町直送の生まぐろを豪快にさばく！「海鮮 うおきん食堂 今治新都市店」で12月6日（日）にまぐろ解体ショーを開催
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:40:02+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">3</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000001576.000023526.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              GOLF TODAYムック『オジサンでもカンタンにできる　プラス１０ヤードの飛ばしのテクニック』発売！
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:40:02+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">4</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000011.000062715.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              全米8校のボーディングスクールが来日。12月12日（土）東京・新宿で「アメリカ・ボーディングスクールフェア」を開催
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:40:02+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">5</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000018.000191921.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【開催報告】大阪観光大学、大阪府泉佐野市内でXRライドバスを6便運行！　リアルな移動と映像を融合した新しい次世代観光を36名が体験。
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:40:02+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">6</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000001134.000099487.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【地域の日常に溶け込む“新しいウェルネス体験”の拠点】カフェ＆ダイニング「cafefe（カフィ）」モーニング前から行列！ランチタイムでは連日満席！
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:40:02+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">7</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000974.000099150.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              不登校の中学生は約21.7万人。その先の高校生活をどう支えるか？ NIJIN高等学院が届ける新しい学びの選択肢
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:40:02+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">8</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000045.000114770.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              Amazon・Prime Video世界ランキングで日本発の実写ドラマ初！森七菜×蒔田彩珠 W主演『地雷グリコ』が世界5位へ急上昇
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:40:02+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">9</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000111.000146648.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【ブラックフライデー特別企画】耳を塞がない次世代イヤーカフ型集音器「Cearvol Liberte」｜話題のオープンイヤーモデルの実力とは？
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:40:02+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">10</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000001836.000016051.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              ≪限定新商品をご用意して、東京駅に催事出店≫【Butter Butler】が、JR東京駅改札内 新幹線北乗り換え口前にて11月30日(月)より催事出店をいたします。
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">11</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000558.000007503.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              ＜長崎土産＞あまおう苺とクリームチーズを重ね、しっとりと焼き上げた『ストロベリークリーミーチーズケーキ』が12月1日（火) 【タンテ・アニー】 から登場！
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">12</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000002190.000019483.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【2027年6月26日（土）・27日（日）宿泊限定】洞爺マンガ・アニメフェスタ＜TMAF＞参加者専用宿泊プラン販売開始！
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">13</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000009044.000001355.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              映画『ジョン・レノン＆オノ・ヨーコ：One to One』半世紀の時を超えて、62秒の貴重な特別映像を解禁！＆緊急決定！11月28日（土）正午より7インチレコードジャケットムビチケを販売開始
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">14</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000004329.000064643.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              麒麟・川島明MC『裏垢ウララカ』今夜11時より「ABEMA」にてシーズン1が放送スタート！内田理央、日向坂46の金村美玖、TEAMのJOら、豪華ゲストがズラリ集結　“裏垢投稿”にスタジオ大激論！
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">15</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000001574.000023526.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              『歴代ブルーバードのすべて』発売！
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">16</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000001383.000155396.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              Happyくじブロマイド『ズートピア ニック コレクション』のランダムプリントがセブン‐イレブンのマルチコピー機に登場
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">17</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000001375.000045234.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              「有限会社小松縫製」様、新規パートナー決定のお知らせ
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">18</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000783.000016651.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【長崎スタジアムシティ】福山雅治 LIVE映像作品『月と龍』2027年2月6日（土）発売決定！開業前夜フリーライブ『Great Freedom』映画化作品『月光』を収録
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">19</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000589.000055180.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【体験型会社説明会】十四代も飲める！日本酒原価酒蔵『20～21歳限定』日本酒の会｜12月20日(日)13時より、新宿総本店で開催
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">20</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000377.000084326.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              12月12日秋田市・シティホール仁井田で「年末大感謝祭」を開催！なまはげ太鼓と餅つきで一年の感謝を地域の皆さまへ
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">21</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000100.000014692.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              アーカイヴプロジェクト「SOUND FUJI」、bloodthirsty butchers結成40周年を記念して、俳優・浅野忠信ロングインタビューを公開。
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">22</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000093.000110273.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              GRIP SWANY×Orange別注企画　サプレックスナイロンを採用した機能派セットアップ
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">23</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000018.000185966.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              7人組バーチャルアイドル「FouRTe Project」7th Single『メロサピエンス』のビジュアルグッズを11月28日（土）12:00より受注販売開始！
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">24</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000186.000132996.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              310社が集結、沖縄の未来が見えた2日間。
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">25</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000005.000153954.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              沖縄の子どもたちが、仲間と挑む年末の2日間　少年サッカー「URUZUNカップ」
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">26</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000063.000033002.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              岐阜で約30年親しまれてきた「とんかつ田なか屋」が東京初出店！11月28日（土）、赤坂にオープン
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">27</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000263.000137731.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【47都道府県の教育委員会を調査】学校向けの生成AIの指針、公式サイトで本文を確認できたのは9団体（19.1%）。本文を読めた8団体のうち5団体は文部科学省のVer.2.0より後の版
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">28</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000011.000168924.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              大人がもう一度、夢中になれる場所。実践型スクール「TGCアカデミー」第2期生募集開始
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">29</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000016.000191510.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              Pimax、ブラックフライデーのPC VR導入検討者向け「環境別・トータルコスト算出ガイド」を公開！ヘッドセット単体価格だけでなくPC・トラッキング・コントローラー・オーディオを含めた最適構成を解説
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">30</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000025.000126494.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              2027年・未年の年賀状とクリスマスカードを、ブラウザで無料作成。MetAI、登録不要の「クリスマスカード・年賀状メーカー 2027」を公開。和のデザイン48種類、データは保存しません
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">31</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000173.000175846.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              初デートの行き先、決め手はどんなひと言？ ヨイトキが「今度、一緒に行こう」につながった会話を調査
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">32</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000101.000185093.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              ゴムマリの専門業務AI-BPO、『業務データ分析レポート』を提供開始
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">33</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000056.000172832.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【スマホ故障・紛失調査】3人に1人が経験、65.6％は「備えなし」
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <div class="number">34</div>
+        <div>
+          <h2>
+            <a href="https://prtimes.jp/main/html/rd/p/000000046.000173933.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              【Amazonブラックフライデー限定54％OFF】RebotAiの10インチAndroid 16 タブレットが10,999円！動画視聴・学習・ネット検索に使える高コスパモデル
+            </a>
+          </h2>
+          <p class="date">公開日時：2026-11-29T00:10:03+09:00</p>
+        </div>
+      </article>
+  </main>
+
+  <textarea id="analysisText">以下はPR TIMESの新着記事一覧です。
+取得日時: 2026/11/29 02:36
+記事数: 34
+
+日本株投資家の視点で分析してください。
+
+日本の上場企業、その子会社、ブランド、保有IPに関連し、
+売上、利益、集客、受注、価格、事業価値、知名度などに
+影響する可能性がある記事を抽出してください。
+
+各候補について、次を示してください。
+
+1. 関連する上場企業名と証券コード
+2. 記事との関係
+3. 株価材料としての強さ（高・中・低）
+4. 注目する理由
+5. 業績への影響経路
+6. 追加で確認すべき情報
+7. 資本関係や証券コードの不確実性
+
+有望な記事がない場合は、無理に候補を挙げず、
+「今回は強い株価材料なし」と明記してください。
+
+=== 記事一覧 ===
+
+1.
+タイトル: 【獣医師発ねこヘルスケアブランド uniam】みりちゃむさんとユニアム代表 獣医師・杉本亜衣が、ねこへの偏愛と毎日の健康を語る。「猫狂研究所」ローンチイベントを開催
+URL: https://prtimes.jp/main/html/rd/p/000000038.000112568.html
+公開日時: 2026-11-29T00:40:02+09:00
+
+2.
+タイトル: 高知県大月町直送の生まぐろを豪快にさばく！「海鮮 うおきん食堂 今治新都市店」で12月6日（日）にまぐろ解体ショーを開催
+URL: https://prtimes.jp/main/html/rd/p/000000064.000033002.html
+公開日時: 2026-11-29T00:40:02+09:00
+
+3.
+タイトル: GOLF TODAYムック『オジサンでもカンタンにできる　プラス１０ヤードの飛ばしのテクニック』発売！
+URL: https://prtimes.jp/main/html/rd/p/000001576.000023526.html
+公開日時: 2026-11-29T00:40:02+09:00
+
+4.
+タイトル: 全米8校のボーディングスクールが来日。12月12日（土）東京・新宿で「アメリカ・ボーディングスクールフェア」を開催
+URL: https://prtimes.jp/main/html/rd/p/000000011.000062715.html
+公開日時: 2026-11-29T00:40:02+09:00
+
+5.
+タイトル: 【開催報告】大阪観光大学、大阪府泉佐野市内でXRライドバスを6便運行！　リアルな移動と映像を融合した新しい次世代観光を36名が体験。
+URL: https://prtimes.jp/main/html/rd/p/000000018.000191921.html
+公開日時: 2026-11-29T00:40:02+09:00
+
+6.
+タイトル: 【地域の日常に溶け込む“新しいウェルネス体験”の拠点】カフェ＆ダイニング「cafefe（カフィ）」モーニング前から行列！ランチタイムでは連日満席！
+URL: https://prtimes.jp/main/html/rd/p/000001134.000099487.html
+公開日時: 2026-11-29T00:40:02+09:00
+
+7.
+タイトル: 不登校の中学生は約21.7万人。その先の高校生活をどう支えるか？ NIJIN高等学院が届ける新しい学びの選択肢
+URL: https://prtimes.jp/main/html/rd/p/000000974.000099150.html
+公開日時: 2026-11-29T00:40:02+09:00
+
+8.
+タイトル: Amazon・Prime Video世界ランキングで日本発の実写ドラマ初！森七菜×蒔田彩珠 W主演『地雷グリコ』が世界5位へ急上昇
+URL: https://prtimes.jp/main/html/rd/p/000000045.000114770.html
+公開日時: 2026-11-29T00:40:02+09:00
+
+9.
+タイトル: 【ブラックフライデー特別企画】耳を塞がない次世代イヤーカフ型集音器「Cearvol Liberte」｜話題のオープンイヤーモデルの実力とは？
+URL: https://prtimes.jp/main/html/rd/p/000000111.000146648.html
+公開日時: 2026-11-29T00:40:02+09:00
+
+10.
+タイトル: ≪限定新商品をご用意して、東京駅に催事出店≫【Butter Butler】が、JR東京駅改札内 新幹線北乗り換え口前にて11月30日(月)より催事出店をいたします。
+URL: https://prtimes.jp/main/html/rd/p/000001836.000016051.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+11.
+タイトル: ＜長崎土産＞あまおう苺とクリームチーズを重ね、しっとりと焼き上げた『ストロベリークリーミーチーズケーキ』が12月1日（火) 【タンテ・アニー】 から登場！
+URL: https://prtimes.jp/main/html/rd/p/000000558.000007503.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+12.
+タイトル: 【2027年6月26日（土）・27日（日）宿泊限定】洞爺マンガ・アニメフェスタ＜TMAF＞参加者専用宿泊プラン販売開始！
+URL: https://prtimes.jp/main/html/rd/p/000002190.000019483.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+13.
+タイトル: 映画『ジョン・レノン＆オノ・ヨーコ：One to One』半世紀の時を超えて、62秒の貴重な特別映像を解禁！＆緊急決定！11月28日（土）正午より7インチレコードジャケットムビチケを販売開始
+URL: https://prtimes.jp/main/html/rd/p/000009044.000001355.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+14.
+タイトル: 麒麟・川島明MC『裏垢ウララカ』今夜11時より「ABEMA」にてシーズン1が放送スタート！内田理央、日向坂46の金村美玖、TEAMのJOら、豪華ゲストがズラリ集結　“裏垢投稿”にスタジオ大激論！
+URL: https://prtimes.jp/main/html/rd/p/000004329.000064643.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+15.
+タイトル: 『歴代ブルーバードのすべて』発売！
+URL: https://prtimes.jp/main/html/rd/p/000001574.000023526.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+16.
+タイトル: Happyくじブロマイド『ズートピア ニック コレクション』のランダムプリントがセブン‐イレブンのマルチコピー機に登場
+URL: https://prtimes.jp/main/html/rd/p/000001383.000155396.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+17.
+タイトル: 「有限会社小松縫製」様、新規パートナー決定のお知らせ
+URL: https://prtimes.jp/main/html/rd/p/000001375.000045234.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+18.
+タイトル: 【長崎スタジアムシティ】福山雅治 LIVE映像作品『月と龍』2027年2月6日（土）発売決定！開業前夜フリーライブ『Great Freedom』映画化作品『月光』を収録
+URL: https://prtimes.jp/main/html/rd/p/000000783.000016651.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+19.
+タイトル: 【体験型会社説明会】十四代も飲める！日本酒原価酒蔵『20～21歳限定』日本酒の会｜12月20日(日)13時より、新宿総本店で開催
+URL: https://prtimes.jp/main/html/rd/p/000000589.000055180.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+20.
+タイトル: 12月12日秋田市・シティホール仁井田で「年末大感謝祭」を開催！なまはげ太鼓と餅つきで一年の感謝を地域の皆さまへ
+URL: https://prtimes.jp/main/html/rd/p/000000377.000084326.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+21.
+タイトル: アーカイヴプロジェクト「SOUND FUJI」、bloodthirsty butchers結成40周年を記念して、俳優・浅野忠信ロングインタビューを公開。
+URL: https://prtimes.jp/main/html/rd/p/000000100.000014692.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+22.
+タイトル: GRIP SWANY×Orange別注企画　サプレックスナイロンを採用した機能派セットアップ
+URL: https://prtimes.jp/main/html/rd/p/000000093.000110273.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+23.
+タイトル: 7人組バーチャルアイドル「FouRTe Project」7th Single『メロサピエンス』のビジュアルグッズを11月28日（土）12:00より受注販売開始！
+URL: https://prtimes.jp/main/html/rd/p/000000018.000185966.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+24.
+タイトル: 310社が集結、沖縄の未来が見えた2日間。
+URL: https://prtimes.jp/main/html/rd/p/000000186.000132996.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+25.
+タイトル: 沖縄の子どもたちが、仲間と挑む年末の2日間　少年サッカー「URUZUNカップ」
+URL: https://prtimes.jp/main/html/rd/p/000000005.000153954.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+26.
+タイトル: 岐阜で約30年親しまれてきた「とんかつ田なか屋」が東京初出店！11月28日（土）、赤坂にオープン
+URL: https://prtimes.jp/main/html/rd/p/000000063.000033002.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+27.
+タイトル: 【47都道府県の教育委員会を調査】学校向けの生成AIの指針、公式サイトで本文を確認できたのは9団体（19.1%）。本文を読めた8団体のうち5団体は文部科学省のVer.2.0より後の版
+URL: https://prtimes.jp/main/html/rd/p/000000263.000137731.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+28.
+タイトル: 大人がもう一度、夢中になれる場所。実践型スクール「TGCアカデミー」第2期生募集開始
+URL: https://prtimes.jp/main/html/rd/p/000000011.000168924.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+29.
+タイトル: Pimax、ブラックフライデーのPC VR導入検討者向け「環境別・トータルコスト算出ガイド」を公開！ヘッドセット単体価格だけでなくPC・トラッキング・コントローラー・オーディオを含めた最適構成を解説
+URL: https://prtimes.jp/main/html/rd/p/000000016.000191510.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+30.
+タイトル: 2027年・未年の年賀状とクリスマスカードを、ブラウザで無料作成。MetAI、登録不要の「クリスマスカード・年賀状メーカー 2027」を公開。和のデザイン48種類、データは保存しません
+URL: https://prtimes.jp/main/html/rd/p/000000025.000126494.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+31.
+タイトル: 初デートの行き先、決め手はどんなひと言？ ヨイトキが「今度、一緒に行こう」につながった会話を調査
+URL: https://prtimes.jp/main/html/rd/p/000000173.000175846.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+32.
+タイトル: ゴムマリの専門業務AI-BPO、『業務データ分析レポート』を提供開始
+URL: https://prtimes.jp/main/html/rd/p/000000101.000185093.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+33.
+タイトル: 【スマホ故障・紛失調査】3人に1人が経験、65.6％は「備えなし」
+URL: https://prtimes.jp/main/html/rd/p/000000056.000172832.html
+公開日時: 2026-11-29T00:10:03+09:00
+
+34.
+タイトル: 【Amazonブラックフライデー限定54％OFF】RebotAiの10インチAndroid 16 タブレットが10,999円！動画視聴・学習・ネット検索に使える高コスパモデル
+URL: https://prtimes.jp/main/html/rd/p/000000046.000173933.html
+公開日時: 2026-11-29T00:10:03+09:00</textarea>
+
+  <script>
+    const copyButton = document.getElementById("copyButton");
+    const copyStatus = document.getElementById("copyStatus");
+    const analysisText = document.getElementById("analysisText");
+
+    copyButton.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(analysisText.value);
+        copyStatus.textContent = "コピーしました。ChatGPTへ貼り付けてください。";
+      } catch (error) {
+        analysisText.focus();
+        analysisText.select();
+        document.execCommand("copy");
+        copyStatus.textContent = "コピーしました。ChatGPTへ貼り付けてください。";
+      }
+    });
+  </script>
+</body>
+</html>
